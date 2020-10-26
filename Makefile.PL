@@ -21,7 +21,9 @@ my %WriteMakefileArgs = (
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'String-Mask-*' },
-    dynamic_config => 0,
+    META_MERGE => {
+        dynamic_config => 0,
+    },
 );
 
 # Compatibility with old versions of ExtUtils::MakeMaker

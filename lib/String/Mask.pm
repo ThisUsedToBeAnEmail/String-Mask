@@ -37,7 +37,7 @@ __END__
 
 =head1 NAME
 
-String::Mask - The great new String::Mask!
+String::Mask - mask sensitive data
 
 =head1 VERSION
 
@@ -68,6 +68,10 @@ Quick summary of what the module does.
 	mask('9991234567', 'middle', 4); # '***1234***'
 
 	mask('9991234567', 'middle', 4, '_'); # '___1234___'
+
+=head1 Description
+
+Data masking or data obfuscation is the process of hiding original data with modified content (characters or other data). The main reason for applying masking to a string is to protect data that is classified as personally identifiable information, sensitive personal data, or commercially sensitive data. However, the data must remain usable for the purposes of undertaking valid test cycles. It must also look real and appear consistent. 
 
 =head1 EXPORT
 
